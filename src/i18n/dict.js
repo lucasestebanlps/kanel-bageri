@@ -11,6 +11,10 @@ export const DEFAULT_LANG = 'es';
 
 export const DICT = {
   es: {
+    'about.fact1': 'prendemos el horno',
+    'about.fact2': 'de fermentación lenta',
+    'about.fact3': 'en Frederiksberg',
+    'hero.ticketTitle': 'Próximo retiro',
     'meta.title': 'Kanel · Panadería danesa en Frederiksberg · Pedí y retirá a tu hora',
     'meta.description':
       'Kanelsnegle, wienerbrød, rugbrød y pan de masa madre horneados cada mañana en Frederiksberg. Armá tu pedido, elegí el horario de retiro y te lo dejamos listo.',
@@ -118,6 +122,10 @@ export const DICT = {
   },
 
   en: {
+    'about.fact1': 'the oven goes on',
+    'about.fact2': 'of slow fermentation',
+    'about.fact3': 'in Frederiksberg',
+    'hero.ticketTitle': 'Next pickup',
     'meta.title': 'Kanel · Danish bakery in Frederiksberg · Order ahead, pick up on time',
     'meta.description':
       'Cinnamon rolls, Danish pastries, rye bread and sourdough baked every morning in Frederiksberg. Build your order, choose your pickup time and we will have it ready.',
@@ -225,6 +233,10 @@ export const DICT = {
   },
 
   da: {
+    'about.fact1': 'tænder vi ovnen',
+    'about.fact2': 'langtidshævning',
+    'about.fact3': 'på Frederiksberg',
+    'hero.ticketTitle': 'Næste afhentning',
     'meta.title': 'Kanel · Bageri på Frederiksberg · Bestil og hent, når det passer dig',
     'meta.description':
       'Kanelsnegle, wienerbrød, rugbrød og surdejsbrød bagt hver morgen på Frederiksberg. Sæt din bestilling sammen, vælg afhentningstidspunkt, så har vi den klar.',

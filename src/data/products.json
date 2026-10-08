@@ -6,16 +6,29 @@
       "category": "wiener",
       "available": true,
       "image": "kanelsnegl",
-      "name": { "es": "Kanelsnegl", "en": "Kanelsnegl (cinnamon roll)", "da": "Kanelsnegl" },
+      "name": {
+        "es": "Kanelsnegl",
+        "en": "Kanelsnegl (cinnamon roll)",
+        "da": "Kanelsnegl"
+      },
       "desc": {
         "es": "El caracol de canela danés: masa con manteca, mucha canela y glaseado. Lo que se agota primero.",
         "en": "The Danish cinnamon swirl: buttery dough, plenty of cinnamon and a sugar glaze. The first thing to go.",
         "da": "Den klassiske kanelsnegl med smørdej, masser af kanel og glasur. Det, der bliver revet væk først."
       },
       "variants": [
-        { "units": 1, "price": 28 },
-        { "units": 4, "price": 100 },
-        { "units": 8, "price": 190 }
+        {
+          "units": 1,
+          "price": 28
+        },
+        {
+          "units": 4,
+          "price": 100
+        },
+        {
+          "units": 8,
+          "price": 190
+        }
       ]
     },
     {
@@ -23,15 +36,25 @@
       "category": "wiener",
       "available": true,
       "image": "kardemommesnurre",
-      "name": { "es": "Kardemommesnurre", "en": "Kardemommesnurre (cardamom knot)", "da": "Kardemommesnurre" },
+      "name": {
+        "es": "Kardemommesnurre",
+        "en": "Kardemommesnurre (cardamom knot)",
+        "da": "Kardemommesnurre"
+      },
       "desc": {
         "es": "Nudo trenzado con cardamomo y azúcar. Aromático, suave por dentro, crocante por fuera.",
         "en": "Twisted knot with cardamom and sugar. Fragrant, soft inside and crisp outside.",
         "da": "Snoet snurre med kardemomme og sukker. Duftende, blød indeni og sprød udenpå."
       },
       "variants": [
-        { "units": 1, "price": 30 },
-        { "units": 4, "price": 110 }
+        {
+          "units": 1,
+          "price": 30
+        },
+        {
+          "units": 4,
+          "price": 110
+        }
       ]
     },
     {
@@ -39,15 +62,25 @@
       "category": "wiener",
       "available": true,
       "image": "spandauer",
-      "name": { "es": "Spandauer", "en": "Spandauer", "da": "Spandauer" },
+      "name": {
+        "es": "Spandauer",
+        "en": "Spandauer",
+        "da": "Spandauer"
+      },
       "desc": {
         "es": "Masa hojaldrada danesa con crema de vainilla y arándanos.",
         "en": "Danish laminated pastry with vanilla cream and blueberries.",
         "da": "Wienerbrød med vaniljecreme og blåbær."
       },
       "variants": [
-        { "units": 1, "price": 28 },
-        { "units": 4, "price": 100 }
+        {
+          "units": 1,
+          "price": 28
+        },
+        {
+          "units": 4,
+          "price": 100
+        }
       ]
     },
     {
@@ -55,15 +88,51 @@
       "category": "wiener",
       "available": true,
       "image": "croissant",
-      "name": { "es": "Croissant de manteca", "en": "Butter croissant", "da": "Smørcroissant" },
+      "name": {
+        "es": "Croissant de manteca",
+        "en": "Butter croissant",
+        "da": "Smørcroissant"
+      },
       "desc": {
         "es": "Hojaldrado con manteca danesa, horneado a la mañana temprano.",
         "en": "Flaky and made with Danish butter, baked early every morning.",
         "da": "Sprød og lagdelt med dansk smør, bagt tidligt hver morgen."
       },
       "variants": [
-        { "units": 1, "price": 22 },
-        { "units": 4, "price": 80 }
+        {
+          "units": 1,
+          "price": 22
+        },
+        {
+          "units": 4,
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": "hindbaersnitte",
+      "category": "wiener",
+      "available": true,
+      "image": "hindbaer",
+      "name": {
+        "es": "Wienerbrød de frambuesa",
+        "en": "Raspberry Danish",
+        "da": "Hindbærwienerbrød"
+      },
+      "desc": {
+        "es": "Hojaldre danés con crema y frambuesas frescas. Solo los fines de semana.",
+        "en": "Danish pastry with custard and fresh raspberries. Weekends only.",
+        "da": "Wienerbrød med creme og friske hindbær. Kun i weekenden."
+      },
+      "variants": [
+        {
+          "units": 1,
+          "price": 32
+        },
+        {
+          "units": 4,
+          "price": 120
+        }
       ]
     },
     {
@@ -71,15 +140,25 @@
       "category": "brod",
       "available": true,
       "image": "rugbrod",
-      "name": { "es": "Rugbrød (pan de centeno)", "en": "Rugbrød (rye bread)", "da": "Rugbrød" },
+      "name": {
+        "es": "Rugbrød (pan de centeno)",
+        "en": "Rugbrød (rye bread)",
+        "da": "Rugbrød"
+      },
       "desc": {
         "es": "El pan de centeno de masa madre, con semillas. Denso, húmedo y bien danés.",
         "en": "Sourdough rye bread with seeds. Dense, moist and very Danish.",
         "da": "Surdejsrugbrød med kerner. Tæt, saftigt og helt som det skal være."
       },
       "variants": [
-        { "units": 1, "price": 45 },
-        { "units": 2, "price": 85 }
+        {
+          "units": 1,
+          "price": 45
+        },
+        {
+          "units": 2,
+          "price": 85
+        }
       ]
     },
     {
@@ -87,15 +166,25 @@
       "category": "brod",
       "available": true,
       "image": "surdejsbrod",
-      "name": { "es": "Pan de masa madre", "en": "Sourdough loaf", "da": "Surdejsbrød" },
+      "name": {
+        "es": "Pan de masa madre",
+        "en": "Sourdough loaf",
+        "da": "Surdejsbrød"
+      },
       "desc": {
         "es": "Fermentación lenta de 24 horas, corteza crocante y miga abierta.",
         "en": "Slow 24-hour fermentation, crisp crust and an open crumb.",
         "da": "Langtidshævet i 24 timer, sprød skorpe og luftig krumme."
       },
       "variants": [
-        { "units": 1, "price": 55 },
-        { "units": 2, "price": 100 }
+        {
+          "units": 1,
+          "price": 55
+        },
+        {
+          "units": 2,
+          "price": 100
+        }
       ]
     },
     {
@@ -103,16 +192,29 @@
       "category": "brod",
       "available": true,
       "image": "rundstykker",
-      "name": { "es": "Rundstykker (pancitos)", "en": "Rundstykker (bread rolls)", "da": "Rundstykker" },
+      "name": {
+        "es": "Rundstykker (pancitos)",
+        "en": "Rundstykker (bread rolls)",
+        "da": "Rundstykker"
+      },
       "desc": {
         "es": "Los pancitos del desayuno danés, recién salidos para el fin de semana.",
         "en": "The rolls of a Danish breakfast, fresh out of the oven for the weekend.",
         "da": "Morgenbordets rundstykker, friske fra ovnen til weekenden."
       },
       "variants": [
-        { "units": 1, "price": 8 },
-        { "units": 6, "price": 45 },
-        { "units": 12, "price": 85 }
+        {
+          "units": 1,
+          "price": 8
+        },
+        {
+          "units": 6,
+          "price": 45
+        },
+        {
+          "units": 12,
+          "price": 85
+        }
       ]
     },
     {
@@ -120,93 +222,164 @@
       "category": "morgen",
       "available": true,
       "image": "brodkurv",
-      "badge": { "es": "Para 2", "en": "For 2", "da": "Til 2" },
-      "name": { "es": "Desayuno para dos", "en": "Breakfast for two", "da": "Morgenpakke til to" },
+      "badge": {
+        "es": "Para 2",
+        "en": "For 2",
+        "da": "Til 2"
+      },
+      "name": {
+        "es": "Desayuno para dos",
+        "en": "Breakfast for two",
+        "da": "Morgenpakke til to"
+      },
       "desc": {
         "es": "4 rundstykker, 2 croissants, 2 kanelsnegle, manteca y queso. Para el domingo a la mañana.",
         "en": "4 rolls, 2 croissants, 2 cinnamon rolls, butter and cheese. For a slow Sunday morning.",
         "da": "4 rundstykker, 2 croissanter, 2 kanelsnegle, smør og ost. Til en rolig søndag morgen."
       },
-      "variants": [{ "units": 1, "price": 175 }]
+      "variants": [
+        {
+          "units": 1,
+          "price": 175
+        }
+      ]
     },
     {
       "id": "kagebord",
       "category": "morgen",
       "available": true,
       "image": "montre",
-      "badge": { "es": "Para 8", "en": "For 8", "da": "Til 8" },
-      "name": { "es": "Bandeja para la oficina", "en": "Office pastry tray", "da": "Kagebakke til kontoret" },
+      "badge": {
+        "es": "Para 8",
+        "en": "For 8",
+        "da": "Til 8"
+      },
+      "name": {
+        "es": "Bandeja para la oficina",
+        "en": "Office pastry tray",
+        "da": "Kagebakke til kontoret"
+      },
       "desc": {
         "es": "8 piezas surtidas de wienerbrød para la reunión o el cumpleaños del equipo.",
         "en": "8 assorted Danish pastries for the meeting or a team birthday.",
         "da": "8 blandede stykker wienerbrød til mødet eller kollegaens fødselsdag."
       },
-      "variants": [{ "units": 1, "price": 220 }]
+      "variants": [
+        {
+          "units": 1,
+          "price": 220
+        }
+      ]
     },
     {
       "id": "kaffe",
       "category": "drinks",
       "available": true,
       "image": "kaffe",
-      "name": { "es": "Café de filtro", "en": "Filter coffee", "da": "Filterkaffe" },
+      "name": {
+        "es": "Café de filtro",
+        "en": "Filter coffee",
+        "da": "Filterkaffe"
+      },
       "desc": {
         "es": "Tostado claro de un tostador de Copenhague.",
         "en": "Light roast from a Copenhagen roaster.",
         "da": "Lyst ristet fra et københavnsk risteri."
       },
-      "variants": [{ "units": 1, "price": 30 }]
+      "variants": [
+        {
+          "units": 1,
+          "price": 30
+        }
+      ]
     },
     {
       "id": "latte",
       "category": "drinks",
       "available": true,
       "image": "latte",
-      "name": { "es": "Café latte", "en": "Café latte", "da": "Café latte" },
+      "name": {
+        "es": "Café latte",
+        "en": "Café latte",
+        "da": "Café latte"
+      },
       "desc": {
         "es": "Espresso doble con leche texturizada (también con avena).",
         "en": "Double espresso with steamed milk (oat milk available).",
         "da": "Dobbelt espresso med skummet mælk (også med havre)."
       },
-      "variants": [{ "units": 1, "price": 42 }]
+      "variants": [
+        {
+          "units": 1,
+          "price": 42
+        }
+      ]
     },
     {
       "id": "kakao",
       "category": "drinks",
       "available": true,
       "image": "kakao",
-      "name": { "es": "Chocolate caliente", "en": "Hot chocolate", "da": "Varm kakao" },
+      "name": {
+        "es": "Chocolate caliente",
+        "en": "Hot chocolate",
+        "da": "Varm kakao"
+      },
       "desc": {
         "es": "Con chocolate de verdad y leche entera.",
         "en": "Made with real chocolate and whole milk.",
         "da": "Lavet på rigtig chokolade og sødmælk."
       },
-      "variants": [{ "units": 1, "price": 38 }]
+      "variants": [
+        {
+          "units": 1,
+          "price": 38
+        }
+      ]
     },
     {
       "id": "te",
       "category": "drinks",
       "available": true,
       "image": "te",
-      "name": { "es": "Té", "en": "Tea", "da": "Te" },
+      "name": {
+        "es": "Té",
+        "en": "Tea",
+        "da": "Te"
+      },
       "desc": {
         "es": "Negro, verde o de hierbas.",
         "en": "Black, green or herbal.",
         "da": "Sort, grøn eller urtete."
       },
-      "variants": [{ "units": 1, "price": 28 }]
+      "variants": [
+        {
+          "units": 1,
+          "price": 28
+        }
+      ]
     },
     {
       "id": "juice",
       "category": "drinks",
       "available": true,
       "image": "juice",
-      "name": { "es": "Jugo de naranja", "en": "Orange juice", "da": "Appelsinjuice" },
+      "name": {
+        "es": "Jugo de naranja",
+        "en": "Orange juice",
+        "da": "Appelsinjuice"
+      },
       "desc": {
         "es": "Exprimido en el momento.",
         "en": "Freshly squeezed.",
         "da": "Friskpresset."
       },
-      "variants": [{ "units": 1, "price": 38 }]
+      "variants": [
+        {
+          "units": 1,
+          "price": 38
+        }
+      ]
     }
   ]
 }

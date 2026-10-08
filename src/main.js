@@ -6,7 +6,7 @@ import { initI18n, t, getLang } from './i18n/index.js';
 import { initHeader } from './header.js';
 import { initGallery } from './gallery.js';
 import { initCatalog } from './catalog.js';
-import { initCart, addToCart } from './cart.js';
+import { initCart, addToCart, nextPickupLabel } from './cart.js';
 import { BUSINESS } from './config.js';
 
 /* Footer year (interpolated by the i18n engine) */
@@ -38,11 +38,23 @@ document.querySelectorAll('[data-plan-price]').forEach((el) => {
 updateWaLinks();
 window.addEventListener('langchange', updateWaLinks);
 
-/* Scroll reveal on static blocks (CSS keeps it off for reduced motion) */
+/* Tarjetita del hero: el próximo horario de retiro, calculado del horario real */
+function updateNextPickup() {
+  const label = nextPickupLabel();
+  document.querySelectorAll('[data-next-pickup]').forEach((el) => {
+    el.textContent = label;
+    el.closest('.hero__ticket')?.toggleAttribute('hidden', !label);
+  });
+}
+updateNextPickup();
+window.addEventListener('langchange', updateNextPickup);
+setInterval(updateNextPickup, 60000);
+
+/* Scroll reveal: el hero se ve de entrada; el resto aparece un poco antes de
+   entrar en pantalla, así nunca se ve un hueco vacío al scrollear rápido. */
 const revealTargets = document.querySelectorAll(
-  '.hero__inner > *, .section__head, .info-card, .about__inner > *, .contact__map'
+  '.section__head, .info-card, .about__photo, .about__text, .contact__map'
 );
-revealTargets.forEach((el) => el.classList.add('reveal'));
 const io = new IntersectionObserver(
   (entries) => {
     entries.forEach((e) => {
@@ -52,6 +64,10 @@ const io = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 }
+  { rootMargin: '0px 0px 15% 0px', threshold: 0 }
 );
-revealTargets.forEach((el) => io.observe(el));
+revealTargets.forEach((el) => {
+  el.classList.add('reveal');
+  if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('is-in');
+  else io.observe(el);
+});

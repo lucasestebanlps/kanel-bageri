@@ -255,6 +255,8 @@ function onSheetKeydown(e) {
 }
 
 export function openSheet() {
+  $('#cart-sheet').classList.remove('is-closing');
+  $('#sheet-scrim').classList.remove('is-closing');
   lastFocused = document.activeElement;
   renderSheet();
   $('#cart-sheet').hidden = false;
@@ -265,11 +267,24 @@ export function openSheet() {
 }
 
 export function closeSheet() {
-  $('#cart-sheet').hidden = true;
-  $('#sheet-scrim').hidden = true;
+  const sheet = $('#cart-sheet');
+  const scrim = $('#sheet-scrim');
+  if (sheet.hidden || sheet.classList.contains('is-closing')) return;
   document.body.classList.remove('sheet-open');
   document.removeEventListener('keydown', onSheetKeydown);
-  lastFocused?.focus?.();
+  // La hoja se va por donde entró; se oculta cuando termina la animación.
+  sheet.classList.add('is-closing');
+  scrim.classList.add('is-closing');
+  const done = () => {
+    if (!sheet.classList.contains('is-closing')) return;
+    sheet.classList.remove('is-closing');
+    scrim.classList.remove('is-closing');
+    sheet.hidden = true;
+    scrim.hidden = true;
+    lastFocused?.focus?.();
+  };
+  sheet.addEventListener('animationend', done, { once: true });
+  setTimeout(done, 300); // por si la animación no corre
 }
 
 /* ---------- WhatsApp checkout ---------- */
@@ -300,6 +315,18 @@ function confirmOrder() {
 }
 
 /* ---------- public API ---------- */
+
+/** Primer horario libre para retirar (lo usa la tarjetita del hero). */
+export function nextPickupLabel() {
+  for (const d of openDays()) {
+    for (const w of HOURS.windows) {
+      const slots = slotsFor(d, w);
+      if (slots.length) return `${dayLabel(d).toLowerCase()} ${slots[0]}`;
+    }
+  }
+  return '';
+}
+
 
 export function addToCart(product, variantIdx) {
   if (!product?.available) return;

@@ -105,6 +105,9 @@ function initTabs() {
       tabs.forEach((x) => x.setAttribute('aria-selected', String(x === tab)));
       panel.setAttribute('aria-labelledby', tab.id);
       renderGrid();
+      panel.classList.remove('is-swapping');
+      void panel.offsetWidth; // reinicia la animación si se cambia rápido
+      panel.classList.add('is-swapping');
     });
   });
 }

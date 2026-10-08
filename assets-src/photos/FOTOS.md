@@ -23,3 +23,4 @@ atribución obligatoria). Ninguna es de un negocio real.
 | montre.jpg | Galería / combo | https://unsplash.com/photos/raQr4ScbK2o |
 | hindbaer.jpg | Galería | https://unsplash.com/photos/GQSus83k5oM |
 | brodkurv.jpg | Combo | https://unsplash.com/photos/4cH5QG1YJg0 |
+| hero-kanelsnegle.jpg | Hero | https://unsplash.com/photos/c07YNJmNfaE |

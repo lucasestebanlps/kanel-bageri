@@ -45,6 +45,7 @@
   --t-fast: 160ms ease;
   --t-med: 260ms ease;
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1); /* entradas y presión */
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1); /* hojas que suben (tipo iOS) */
 
   /* Firma: un kanelsnegl con glaseado (SVG inline, 2 usos: hero y botón de WhatsApp) */
   --kanel: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cellipse cx='100' cy='112' rx='84' ry='70' fill='%23C97F22'/%3E%3Cellipse cx='100' cy='104' rx='84' ry='70' fill='%23E8B05F'/%3E%3Cpath d='M100 104A8 8 0 0 1 116 104A16 16 0 0 1 84 104A24 24 0 0 1 132 104A32 32 0 0 1 68 104A40 40 0 0 1 148 104A48 48 0 0 1 52 104A56 56 0 0 1 164 104' fill='none' stroke='%237A3F1F' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M46 86c18-22 48-30 72-24M132 70c12 4 22 12 28 22M58 128c14 10 34 14 54 10' fill='none' stroke='%23FFF6E6' stroke-width='6' stroke-linecap='round' opacity='.9'/%3E%3C/svg%3E");
@@ -576,7 +577,15 @@ body.sheet-open {
   padding: calc(var(--top-h) + clamp(2.5rem, 8vw, 5rem)) var(--pad-x) clamp(6rem, 12vw, 8rem);
   background-color: var(--c-cream);
   /* patrón de kanelsnegle chiquitos */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cpath d='M38 46A3.4 3.4 0 0 1 44.8 46A6.8 6.8 0 0 1 31.199999999999996 46A10.2 10.2 0 0 1 51.599999999999994 46A13.6 13.6 0 0 1 24.399999999999995 46A17.0 17.0 0 0 1 58.39999999999999 46' fill='none' stroke='%238A4B2A' stroke-opacity='0.07' stroke-width='3.06' stroke-linecap='round'/%3E%3Cpath d='M118 116A2.6 2.6 0 0 1 123.2 116A5.2 5.2 0 0 1 112.8 116A7.800000000000001 7.800000000000001 0 0 1 128.4 116A10.4 10.4 0 0 1 107.60000000000001 116A13.0 13.0 0 0 1 133.60000000000002 116' fill='none' stroke='%23EFA63F' stroke-opacity='0.12' stroke-width='2.34' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cpath d='M38 46A3.4 3.4 0 0 1 44.8 46A6.8 6.8 0 0 1 31.199999999999996 46A10.2 10.2 0 0 1 51.599999999999994 46A13.6 13.6 0 0 1 24.399999999999995 46A17.0 17.0 0 0 1 58.39999999999999 46' fill='none' stroke='%238A4B2A' stroke-opacity='0.045' stroke-width='3.06' stroke-linecap='round'/%3E%3Cpath d='M118 116A2.6 2.6 0 0 1 123.2 116A5.2 5.2 0 0 1 112.8 116A7.800000000000001 7.800000000000001 0 0 1 128.4 116A10.4 10.4 0 0 1 107.60000000000001 116A13.0 13.0 0 0 1 133.60000000000002 116' fill='none' stroke='%23EFA63F' stroke-opacity='0.09' stroke-width='2.34' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.hero__grid {
+  max-width: var(--content-w);
+  margin-inline: auto;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
 }
 
 .hero__inner {
@@ -584,6 +593,81 @@ body.sheet-open {
   margin-inline: auto;
   text-align: center;
 }
+
+/* Foto del producto dentro de un arco de horno */
+.hero__figure {
+  position: relative;
+  margin: 0 auto;
+  width: min(100%, 440px);
+  order: -1;
+}
+.hero__arch {
+  aspect-ratio: 4 / 5;
+  border-radius: 999px 999px 28px 28px;
+  overflow: hidden;
+  border: 6px solid var(--c-white);
+  box-shadow: 0 30px 60px -28px rgba(90, 46, 23, 0.45);
+  background: var(--c-cream-2);
+}
+.hero__arch img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__ticket {
+  position: absolute;
+  left: clamp(8px, 2vw, 0px);
+  bottom: 12%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0.6rem 1rem;
+  border-radius: var(--r-m);
+  background: var(--c-white);
+  box-shadow: var(--shadow-2);
+  font-size: 0.92rem;
+  color: var(--c-kanel-ink);
+  white-space: nowrap;
+}
+.hero__ticket b {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-kanel);
+}
+.hero__ticket-dot {
+  width: 10px;
+  height: 10px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--c-wa);
+  box-shadow: 0 0 0 4px rgba(31, 170, 85, 0.18);
+}
+
+@media (max-width: 899px) {
+  .hero__figure {
+    width: min(100%, 360px);
+  }
+  .hero__ticket {
+    left: 10px;
+    bottom: 10px;
+    padding: 0.45rem 0.8rem;
+  }
+  .hero__kanel {
+    right: -6px;
+    top: -10px;
+    width: 64px;
+  }
+  .hero__arch {
+    aspect-ratio: 5 / 4;
+    border-radius: 999px 999px 24px 24px;
+  }
+}
+
 
 .hero__badge {
   display: inline-flex;
@@ -601,7 +685,9 @@ body.sheet-open {
 }
 
 .hero h1 {
-  font-size: clamp(2.35rem, 7vw, 4rem);
+  font-size: clamp(2.35rem, 6vw, 3.9rem);
+  line-height: 1.04;
+  text-wrap: balance;
   letter-spacing: -0.01em;
   margin-bottom: 0.4em;
 }
@@ -644,33 +730,48 @@ body.sheet-open {
   color: var(--c-orange-deep);
 }
 
+@media (min-width: 900px) {
+  .hero__ticket {
+    left: -22px;
+  }
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .hero__inner {
+    text-align: left;
+    margin-inline: 0;
+  }
+  .hero__inner .hero__sub {
+    margin-inline: 0;
+  }
+  .hero__ctas,
+  .hero__facts {
+    justify-content: flex-start;
+  }
+  .hero__figure {
+    order: 0;
+  }
+}
+
 .hero__kanel {
   position: absolute;
-  right: clamp(4px, 4vw, 70px);
-  bottom: clamp(20px, 4.5vw, 62px);
-  width: clamp(84px, 13vw, 150px);
+  right: -18px;
+  top: -14px;
+  width: clamp(72px, 9vw, 110px);
   aspect-ratio: 1;
   background: var(--kanel) no-repeat center / contain;
+  transform: rotate(-12deg);
   z-index: 2;
 }
 
 [data-kanel] {
   background: var(--kanel) no-repeat center / contain;
 }
-@media (max-width: 599px) {
-  /* en el celular el botón de WhatsApp ocupa la esquina derecha */
-  .hero__kanel {
-    right: auto;
-    left: 12px;
-    bottom: 34px;
-    width: 72px;
-  }
-}
 
 /* ============ Gallery carousel ============ */
 .carousel {
   position: relative;
-  max-width: 860px;
+  max-width: 760px;
   margin-inline: auto;
 }
 
@@ -697,7 +798,7 @@ body.sheet-open {
   width: 100%;
   /* height:auto beats the HTML height attribute so aspect-ratio can apply */
   height: auto;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   border-radius: var(--r-l);
   background: var(--c-cream-2);
@@ -818,13 +919,18 @@ body.sheet-open {
 
 @media (min-width: 600px) {
   .menu__grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu__grid > .card {
+    flex: 0 1 calc((100% - 1.4rem) / 2);
   }
 }
 
 @media (min-width: 860px) {
-  .menu__grid {
-    grid-template-columns: repeat(3, 1fr);
+  .menu__grid > .card {
+    flex-basis: calc((100% - 2.8rem) / 3);
   }
 }
 
@@ -1002,31 +1108,70 @@ body.sheet-open {
 }
 
 .about__inner {
-  max-width: 680px;
+  max-width: var(--content-w);
   margin-inline: auto;
-  text-align: center;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
 }
 
-.about__inner h2 {
+.about__photo {
+  margin: 0;
+}
+.about__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 999px 999px var(--r-l) var(--r-l);
+  border: 6px solid rgba(251, 243, 223, 0.14);
+}
+
+.about__text h2 {
   color: var(--c-cream);
   font-size: clamp(1.9rem, 4.5vw, 2.6rem);
 }
 
-.about__inner h2::after {
+.about__text h2::after {
   content: '';
   display: block;
   width: 120px;
   height: 11px;
-  margin: 0.9rem auto 0;
-  border-radius: var(--r-pill);
-  background: repeating-conic-gradient(var(--c-orange) 0% 25%, transparent 0% 50%) 0 0 / 11px 11px;
-  opacity: 0.85;
+  margin: 0.9rem 0 0;
+  background: radial-gradient(circle, var(--c-orange) 0 3px, transparent 3.5px) 0 50% / 13px 13px repeat-x;
 }
 
-.about__inner p {
+.about__text p {
   color: rgba(251, 243, 223, 0.88);
   font-size: 1.05rem;
   margin-top: 1.2em;
+  max-width: 56ch;
+}
+
+.about__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.2rem;
+  margin: 2rem 0 0;
+}
+.about__facts dt {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--c-orange);
+}
+.about__facts dd {
+  margin: 0.3rem 0 0;
+  color: rgba(251, 243, 223, 0.78);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 860px) {
+  .about__inner {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
 }
 
 /* ============ Contacto ============ */
@@ -1504,7 +1649,7 @@ body.sheet-open {
   border-radius: var(--r-pill);
   box-shadow: var(--shadow-2);
   opacity: 0;
-  transition: opacity var(--t-med), transform var(--t-med);
+  transition: opacity 0.22s var(--ease-out), transform 0.22s var(--ease-out);
   pointer-events: none;
   white-space: nowrap;
 }
@@ -1517,8 +1662,8 @@ body.sheet-open {
 /* ============ Reveal ============ */
 .reveal {
   opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 480ms ease, transform 480ms ease;
+  transform: translateY(12px);
+  transition: opacity 450ms var(--ease-out), transform 450ms var(--ease-out);
 }
 
 .reveal.is-in {
@@ -1571,5 +1716,92 @@ body.sheet-open {
 @media (min-width: 940px) and (max-width: 1199px) {
   .header-actions > .btn {
     display: none;
+  }
+}
+
+/* ============ Movimiento: superficies que aparecen ============ */
+/* Hoja del pedido: en el celular sube desde abajo y se va por el mismo lado;
+   en pantallas anchas es un cuadro centrado que aparece con fade + escala. */
+.cart-sheet:not([hidden]) {
+  animation: sheet-up 0.34s var(--ease-drawer);
+}
+.cart-sheet.is-closing {
+  animation: sheet-down 0.22s var(--ease-drawer) forwards;
+}
+.sheet-scrim:not([hidden]),
+.drawer-scrim:not([hidden]) {
+  animation: fade-in 0.22s var(--ease-out);
+}
+.sheet-scrim.is-closing {
+  animation: fade-out 0.22s var(--ease-out) forwards;
+}
+@keyframes sheet-up {
+  from { transform: translateY(100%); }
+}
+@keyframes sheet-down {
+  to { transform: translateY(100%); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+@media (min-width: 600px) {
+  .cart-sheet:not([hidden]) {
+    animation: modal-in 0.24s var(--ease-out);
+  }
+  .cart-sheet.is-closing {
+    animation: modal-out 0.18s var(--ease-out) forwards;
+  }
+  @keyframes modal-in {
+    from { opacity: 0; transform: translate(-50%, -50%) scale(0.96); }
+  }
+  @keyframes modal-out {
+    to { opacity: 0; transform: translate(-50%, -50%) scale(0.96); }
+  }
+}
+
+/* Menú del celular: sale del botón de las tres rayas (arriba a la derecha) */
+.mobile-drawer:not([hidden]) {
+  transform-origin: top right;
+  animation: drawer-in 0.22s var(--ease-out);
+}
+@keyframes drawer-in {
+  from { opacity: 0; transform: scale(0.96) translateY(-6px); }
+}
+
+/* Barra del carrito: sube cuando agregás el primer producto */
+.cart-bar:not([hidden]) {
+  animation: bar-up 0.32s var(--ease-drawer);
+}
+@keyframes bar-up {
+  from { transform: translateY(140%); }
+}
+@media (min-width: 600px) {
+  @keyframes bar-up {
+    from { transform: translate(-50%, 140%); }
+  }
+}
+
+/* Al cambiar de pestaña las tarjetas nuevas aparecen, no saltan */
+.menu__grid.is-swapping > * {
+  animation: fade-up 0.2s var(--ease-out) backwards;
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cart-sheet:not([hidden]),
+  .mobile-drawer:not([hidden]),
+  .menu__grid.is-swapping > * {
+    animation-name: fade-in;
+  }
+  .cart-sheet.is-closing {
+    animation-name: fade-out;
+  }
+  .cart-bar:not([hidden]) {
+    animation: none;
   }
 }

@@ -139,6 +139,7 @@
     <main id="main">
       <!-- ============ HERO ============ -->
       <section class="hero" id="inicio">
+        <div class="hero__grid">
         <div class="hero__inner">
           <p class="hero__badge">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="icon"><path d="M12 21V8M12 8c0-2.5 1.6-4.4 4-5-.2 2.6-1.6 4.4-4 5zm0 0C12 5.5 10.4 3.6 8 3c.2 2.6 1.6 4.4 4 5zm0 5c0-2.5 1.6-4.4 4-5-.2 2.6-1.6 4.4-4 5zm0 0c0-2.5-1.6-4.4-4-5 .2 2.6 1.6 4.4 4 5zm0 5c0-2.5 1.6-4.4 4-5-.2 2.6-1.6 4.4-4 5zm0 0c0-2.5-1.6-4.4-4-5 .2 2.6 1.6 4.4 4 5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
@@ -186,8 +187,21 @@
           </ul>
         </div>
 
-        <!-- Firma: un kanelsnegl asomado sobre la ola -->
-        <div class="hero__kanel" aria-hidden="true" data-kanel></div>
+        <figure class="hero__figure">
+          <div class="hero__arch">
+            <picture>
+              <source type="image/webp" srcset="/img/hero-kanelsnegle-480.webp 480w, /img/hero-kanelsnegle-800.webp 800w, /img/hero-kanelsnegle-1200.webp 1200w" sizes="(min-width: 900px) 440px, 92vw" />
+              <img src="/img/hero-kanelsnegle-800.jpg" alt="Una bandeja de kanelsnegle recién horneados con glaseado" width="800" height="1200" fetchpriority="high" decoding="async" />
+            </picture>
+          </div>
+          <p class="hero__ticket" aria-hidden="true">
+            <span class="hero__ticket-dot"></span>
+            <span><b data-i18n="hero.ticketTitle">Próximo retiro</b> <span data-next-pickup>hoy 14:30</span></span>
+          </p>
+          <!-- Firma: un kanelsnegl asomado sobre el arco -->
+          <div class="hero__kanel" aria-hidden="true" data-kanel></div>
+        </figure>
+        </div>
 
         <div class="wave wave--white" aria-hidden="true">
           <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false">
@@ -208,13 +222,7 @@
             <figure class="carousel__slide">
               <picture>
                 <source type="image/webp" srcset="/img/vitrine-800.webp 800w, /img/vitrine-1200.webp 1200w" sizes="(min-width: 860px) 720px, 92vw" />
-                <img src="/img/vitrine-800.jpg" alt="La vitrina de madera de Kanel con el pan del día" width="800" height="534" loading="lazy" decoding="async" />
-              </picture>
-            </figure>
-            <figure class="carousel__slide">
-              <picture>
-                <source type="image/webp" srcset="/img/dej-800.webp 800w, /img/dej-1200.webp 1200w" sizes="(min-width: 860px) 720px, 92vw" />
-                <img src="/img/dej-800.jpg" alt="Manos amasando la masa sobre la mesada enharinada" width="800" height="547" loading="lazy" decoding="async" />
+                <img src="/img/vitrine-800.jpg" alt="La vitrina de madera de Kanel con el pan del día" width="800" height="533" loading="lazy" decoding="async" />
               </picture>
             </figure>
             <figure class="carousel__slide">
@@ -227,12 +235,6 @@
               <picture>
                 <source type="image/webp" srcset="/img/montre-800.webp 800w, /img/montre-1200.webp 1200w" sizes="(min-width: 860px) 720px, 92vw" />
                 <img src="/img/montre-800.jpg" alt="La vitrina con el wienerbrød recién horneado" width="800" height="1778" loading="lazy" decoding="async" />
-              </picture>
-            </figure>
-            <figure class="carousel__slide">
-              <picture>
-                <source type="image/webp" srcset="/img/hindbaer-800.webp 800w, /img/hindbaer-1200.webp 1200w" sizes="(min-width: 860px) 720px, 92vw" />
-                <img src="/img/hindbaer-800.jpg" alt="Wienerbrød de frambuesa en la vitrina" width="800" height="534" loading="lazy" decoding="async" />
               </picture>
             </figure>
           </div>
@@ -280,13 +282,26 @@
           </svg>
         </div>
         <div class="about__inner">
-          <h2 data-i18n="about.title">Bajo el olor a canela</h2>
-          <p data-i18n="about.p1">
-            Kanel es una panadería chica de Frederiksberg. Empezamos en 2018 con un horno, una receta de kanelsnegl y la idea de hacer pan como antes: a mano, con tiempo y con ingredientes de verdad.
-          </p>
-          <p data-i18n="about.p2">
-            Hoy horneamos todos los días desde las 4 de la mañana, con manteca danesa y harina orgánica de molinos de Dinamarca. Pedí con anticipación y pasá a buscarlo a la hora que te quede cómoda.
-          </p>
+          <figure class="about__photo">
+            <picture>
+              <source type="image/webp" srcset="/img/dej-480.webp 480w, /img/dej-800.webp 800w, /img/dej-1200.webp 1200w" sizes="(min-width: 860px) 460px, 92vw" />
+              <img src="/img/dej-800.jpg" alt="Manos amasando la masa sobre la mesada enharinada" width="800" height="547" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <div class="about__text">
+            <h2 data-i18n="about.title">Bajo el olor a canela</h2>
+            <p data-i18n="about.p1">
+              Kanel es una panadería chica de Frederiksberg. Empezamos en 2018 con un horno, una receta de kanelsnegl y la idea de hacer pan como antes: a mano, con tiempo y con ingredientes de verdad.
+            </p>
+            <p data-i18n="about.p2">
+              Hoy horneamos todos los días desde las 4 de la mañana, con manteca danesa y harina orgánica de molinos de Dinamarca. Pedí con anticipación y pasá a buscarlo a la hora que te quede cómoda.
+            </p>
+            <dl class="about__facts">
+              <div><dt>4:00</dt><dd data-i18n="about.fact1">prendemos el horno</dd></div>
+              <div><dt>24 h</dt><dd data-i18n="about.fact2">de fermentación lenta</dd></div>
+              <div><dt>2018</dt><dd data-i18n="about.fact3">en Frederiksberg</dd></div>
+            </dl>
+          </div>
         </div>
         <div class="wave wave--cream" aria-hidden="true">
           <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false">
