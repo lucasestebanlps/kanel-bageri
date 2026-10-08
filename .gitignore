@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# generado por scripts/gen-webp.js a partir de assets-src/photos/
+public/img/
+.DS_Store

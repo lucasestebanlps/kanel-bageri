@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kanel-bageri.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kanel-bageri.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanel-bageri.vercel.app/en/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://kanel-bageri.vercel.app/da/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanel-bageri.vercel.app/" />
+  </url>
+  <url>
+    <loc>https://kanel-bageri.vercel.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kanel-bageri.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanel-bageri.vercel.app/en/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://kanel-bageri.vercel.app/da/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanel-bageri.vercel.app/" />
+  </url>
+  <url>
+    <loc>https://kanel-bageri.vercel.app/da/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kanel-bageri.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kanel-bageri.vercel.app/en/" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://kanel-bageri.vercel.app/da/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kanel-bageri.vercel.app/" />
+  </url>
+</urlset>
