@@ -196,19 +196,20 @@ function renderSheet() {
 
     const winBox = $('[data-cart-windows]');
     winBox.innerHTML = '';
-    HOURS.windows.forEach((w) => {
-      const available = selectedDay ? slotsFor(selectedDay, w).length > 0 : false;
+    // Solo las franjas que todavía tienen horarios ese día (hoy a las 12 ya no
+    // aparece "por la mañana"). Si queda una sola, se elige sola.
+    const windows = selectedDay ? HOURS.windows.filter((w) => slotsFor(selectedDay, w).length > 0) : [];
+    if (windows.length === 1 && pickup.windowId !== windows[0].id) {
+      pickup.windowId = windows[0].id;
+      pickup.time = null;
+    }
+    windows.forEach((w) => {
       winBox.appendChild(
-        chip(
-          t(`cart.window.${w.id}`),
-          pickup.windowId === w.id,
-          () => {
-            pickup.windowId = w.id;
-            pickup.time = null;
-            renderSheet();
-          },
-          !available
-        )
+        chip(t(`cart.window.${w.id}`), pickup.windowId === w.id, () => {
+          pickup.windowId = w.id;
+          pickup.time = null;
+          renderSheet();
+        })
       );
     });
 

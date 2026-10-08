@@ -1370,7 +1370,8 @@ body.sheet-open {
   background: var(--c-kanel-deep);
   color: var(--c-cream);
   border-radius: var(--r-pill);
-  box-shadow: var(--shadow-2);
+  /* borde crema: la barra se distingue también sobre el pie, que es del mismo marrón */
+  box-shadow: 0 0 0 2px var(--c-cream), 0 12px 30px rgba(63, 32, 18, 0.35);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1804,4 +1805,14 @@ body.sheet-open {
   .cart-bar:not([hidden]) {
     animation: none;
   }
+}
+
+.chip:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Con el carrito abierto, el pie deja lugar para que la barra no tape el texto */
+body:has(.cart-bar:not([hidden])) .site-footer {
+  padding-bottom: 96px;
 }

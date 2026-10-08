@@ -17,7 +17,7 @@ export const DICT = {
     'hero.ticketTitle': 'Próximo retiro',
     'meta.title': 'Kanel · Panadería danesa en Frederiksberg · Pedí y retirá a tu hora',
     'meta.description':
-      'Kanelsnegle, wienerbrød, rugbrød y pan de masa madre horneados cada mañana en Frederiksberg. Armá tu pedido, elegí el horario de retiro y te lo dejamos listo.',
+      'Kanelsnegle, masas danesas, rugbrød y pan de masa madre horneados cada mañana en Frederiksberg. Armá tu pedido, elegí el horario de retiro y te lo dejamos listo.',
 
     'a11y.skip': 'Saltar al contenido',
     'a11y.openMenu': 'Abrir menú de navegación',
@@ -54,7 +54,7 @@ export const DICT = {
 
     'menu.title': 'El menú',
     'menu.sub': 'Precios en coronas danesas. Armá tu pedido y elegí cuándo lo retirás.',
-    'menu.tab.wiener': 'Wienerbrød',
+    'menu.tab.wiener': 'Masas danesas',
     'menu.tab.brod': 'Pan',
     'menu.tab.morgen': 'Para compartir',
     'menu.tab.drinks': 'Bebidas',
