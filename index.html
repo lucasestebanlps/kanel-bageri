@@ -217,35 +217,44 @@
           <p data-i18n="gallery.sub">Desde las 4 de la mañana, todos los días menos el lunes.</p>
         </div>
 
-        <div class="carousel" data-carousel>
-          <div class="carousel__track" data-carousel-track tabindex="0">
-            <figure class="carousel__slide">
+        <ul class="mosaic" data-i18n-attr="aria-label:gallery.title" aria-label="Recién salido del horno">
+            <li class="mosaic__item mosaic__item--big">
               <picture>
-                <source type="image/webp" srcset="/img/vitrine-800.webp 800w, /img/vitrine-1200.webp 1200w" sizes="(min-width: 860px) 720px, 92vw" />
-                <img src="/img/vitrine-800.jpg" alt="La vitrina de madera de Kanel con el pan del día" width="800" height="533" loading="lazy" decoding="async" />
+                <source type="image/webp" srcset="/img/harina-480.webp 480w, /img/harina-800.webp 800w, /img/harina-1200.webp 1200w" sizes="(min-width: 860px) 560px, 80vw" />
+                <img src="/img/harina-800.jpg" alt="Harina cayendo sobre una hogaza recién horneada" width="1400" height="1750" loading="lazy" decoding="async" />
               </picture>
-            </figure>
-            <figure class="carousel__slide">
+            </li>
+            <li class="mosaic__item">
               <picture>
-                <source type="image/webp" srcset="/img/brodhylder-800.webp 800w, /img/brodhylder-1200.webp 1200w" sizes="(min-width: 860px) 720px, 92vw" />
-                <img src="/img/brodhylder-800.jpg" alt="Estantes con los panes del día" width="800" height="1200" loading="lazy" decoding="async" />
+                <source type="image/webp" srcset="/img/vitrine-480.webp 480w, /img/vitrine-800.webp 800w, /img/vitrine-1200.webp 1200w" sizes="(min-width: 860px) 280px, 80vw" />
+                <img src="/img/vitrine-800.jpg" alt="La vitrina de madera de Kanel con el pan del día" width="1400" height="934" loading="lazy" decoding="async" />
               </picture>
-            </figure>
-            <figure class="carousel__slide">
+            </li>
+            <li class="mosaic__item">
               <picture>
-                <source type="image/webp" srcset="/img/montre-800.webp 800w, /img/montre-1200.webp 1200w" sizes="(min-width: 860px) 720px, 92vw" />
-                <img src="/img/montre-800.jpg" alt="La vitrina con las masas danesas recién horneadas" width="800" height="1778" loading="lazy" decoding="async" />
+                <source type="image/webp" srcset="/img/kaffe-boller-480.webp 480w, /img/kaffe-boller-800.webp 800w, /img/kaffe-boller-1200.webp 1200w" sizes="(min-width: 860px) 280px, 80vw" />
+                <img src="/img/kaffe-boller-800.jpg" alt="Café con leche y dos bollos de canela sobre la mesa" width="1400" height="1400" loading="lazy" decoding="async" />
               </picture>
-            </figure>
-          </div>
-          <button type="button" class="carousel__arrow carousel__arrow--prev" data-carousel-prev data-i18n-attr="aria-label:gallery.prev" aria-label="Foto anterior">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
-          </button>
-          <button type="button" class="carousel__arrow carousel__arrow--next" data-carousel-next data-i18n-attr="aria-label:gallery.next" aria-label="Foto siguiente">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
-          </button>
-          <div class="carousel__dots" data-carousel-dots></div>
-        </div>
+            </li>
+            <li class="mosaic__item">
+              <picture>
+                <source type="image/webp" srcset="/img/brodvogn-480.webp 480w, /img/brodvogn-800.webp 800w, /img/brodvogn-1200.webp 1200w" sizes="(min-width: 860px) 280px, 80vw" />
+                <img src="/img/brodvogn-800.jpg" alt="El carro con los panes recién salidos del horno" width="1400" height="2100" loading="lazy" decoding="async" />
+              </picture>
+            </li>
+            <li class="mosaic__item">
+              <picture>
+                <source type="image/webp" srcset="/img/kaffe-croissant-480.webp 480w, /img/kaffe-croissant-800.webp 800w, /img/kaffe-croissant-1200.webp 1200w" sizes="(min-width: 860px) 280px, 80vw" />
+                <img src="/img/kaffe-croissant-800.jpg" alt="Café con croissants y pain au chocolat" width="1400" height="939" loading="lazy" decoding="async" />
+              </picture>
+            </li>
+            <li class="mosaic__item mosaic__item--wide">
+              <picture>
+                <source type="image/webp" srcset="/img/brod-raekker-480.webp 480w, /img/brod-raekker-800.webp 800w, /img/brod-raekker-1200.webp 1200w" sizes="(min-width: 860px) 1120px, 80vw" />
+                <img src="/img/brod-raekker-800.jpg" alt="Panes de masa madre en fila, enharinados" width="1400" height="2100" loading="lazy" decoding="async" />
+              </picture>
+            </li>
+        </ul>
 
         <div class="wave wave--cream2" aria-hidden="true">
           <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false">

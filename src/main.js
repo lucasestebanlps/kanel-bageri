@@ -4,7 +4,6 @@
 import './styles/style.css';
 import { initI18n, t, getLang } from './i18n/index.js';
 import { initHeader } from './header.js';
-import { initGallery } from './gallery.js';
 import { initCatalog } from './catalog.js';
 import { initCart, addToCart, nextPickupLabel } from './cart.js';
 import { BUSINESS } from './config.js';
@@ -16,7 +15,6 @@ document.querySelectorAll('[data-i18n="footer.rights"]').forEach((el) => {
 
 initI18n();
 initHeader();
-initGallery();
 // Cart restores saved lines by resolving them against the catalog,
 // so it must initialize after products are loaded.
 initCatalog({ onAdd: addToCart }).then(initCart);

@@ -24,3 +24,9 @@ atribución obligatoria). Ninguna es de un negocio real.
 | hindbaer.jpg | Galería | https://unsplash.com/photos/GQSus83k5oM |
 | brodkurv.jpg | Combo | https://unsplash.com/photos/4cH5QG1YJg0 |
 | hero-kanelsnegle.jpg | Hero | https://unsplash.com/photos/c07YNJmNfaE |
+| harina.jpg | Galería | https://unsplash.com/photos/I5G_suhoqBQ |
+| kaffe-boller.jpg | Galería | https://unsplash.com/photos/9B9-Wq1cZMI |
+| brodvogn.jpg | Galería | https://unsplash.com/photos/ltCgZeYZGro |
+| kaffe-croissant.jpg | Galería | https://unsplash.com/photos/lMSmhRDS0Ik |
+| brod-raekker.jpg | Galería | https://unsplash.com/photos/zxppW3bydXQ |
+| montre.jpg | Combo (bandeja oficina) | https://unsplash.com/photos/raQr4ScbK2o |

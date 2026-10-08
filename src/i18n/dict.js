@@ -48,9 +48,6 @@ export const DICT = {
 
     'gallery.title': 'Recién salido del horno',
     'gallery.sub': 'Desde las 4 de la mañana, todos los días menos el lunes.',
-    'gallery.prev': 'Foto anterior',
-    'gallery.next': 'Foto siguiente',
-    'gallery.goto': 'Ir a la foto {n}',
 
     'menu.title': 'El menú',
     'menu.sub': 'Precios en coronas danesas. Armá tu pedido y elegí cuándo lo retirás.',
@@ -159,9 +156,6 @@ export const DICT = {
 
     'gallery.title': 'Fresh from the oven',
     'gallery.sub': 'From 4 in the morning, every day except Monday.',
-    'gallery.prev': 'Previous photo',
-    'gallery.next': 'Next photo',
-    'gallery.goto': 'Go to photo {n}',
 
     'menu.title': 'The menu',
     'menu.sub': 'Prices in Danish kroner. Build your order and choose when to collect it.',
@@ -270,9 +264,6 @@ export const DICT = {
 
     'gallery.title': 'Lige ud af ovnen',
     'gallery.sub': 'Fra klokken 4 om morgenen, alle dage undtagen mandag.',
-    'gallery.prev': 'Forrige billede',
-    'gallery.next': 'Næste billede',
-    'gallery.goto': 'Gå til billede {n}',
 
     'menu.title': 'Menuen',
     'menu.sub': 'Priser i danske kroner. Sæt din bestilling sammen, og vælg hvornår du henter den.',
