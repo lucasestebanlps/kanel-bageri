@@ -1,0 +1,21 @@
+{
+  "name": "kanel-panel",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "importar:json": "sanity exec scripts/importar-json.js --with-user-token",
+    "importar:csv": "sanity exec scripts/importar-csv.js --with-user-token --"
+  },
+  "dependencies": {
+    "@sanity/locale-da-dk": "^1.0.33",
+    "@sanity/orderable-document-list": "^2.0.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sanity": "^6.20.0",
+    "styled-components": "^6.6.0"
+  }
+}

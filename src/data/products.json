@@ -1,5 +1,39 @@
 {
-  "_comment": "Catálogo de Kanel (panadería ficticia, ejemplo del plan Profesional). Misma forma que el esquema del panel (nombre/descripción por idioma, paquetes con precio, categoría, foto, disponible). Fotos: Unsplash, ver assets-src/photos/FOTOS.md.",
+  "_comment": "Catálogo de Kanel (panadería ficticia, ejemplo del plan Profesional). Misma forma que el esquema del panel (nombre/descripción por idioma, paquetes con precio, categoría (lista de categorías con nombre por idioma), foto, disponible). Fotos: Unsplash, ver assets-src/photos/FOTOS.md.",
+  "categories": [
+    {
+      "id": "wiener",
+      "name": {
+        "es": "Masas danesas",
+        "en": "Pastries",
+        "da": "Wienerbrød"
+      }
+    },
+    {
+      "id": "brod",
+      "name": {
+        "es": "Pan",
+        "en": "Bread",
+        "da": "Brød"
+      }
+    },
+    {
+      "id": "morgen",
+      "name": {
+        "es": "Para compartir",
+        "en": "To share",
+        "da": "Til deling"
+      }
+    },
+    {
+      "id": "drinks",
+      "name": {
+        "es": "Bebidas",
+        "en": "Drinks",
+        "da": "Drikke"
+      }
+    }
+  ],
   "products": [
     {
       "id": "kanelsnegl",

@@ -7,7 +7,7 @@
  */
 import { t, getLang } from './i18n/index.js';
 import { BUSINESS, HOURS } from './config.js';
-import { getProduct } from './catalog.js';
+import { getProduct, unitsLabel, escapeHtml } from './catalog.js';
 
 const STORAGE_KEY = 'kanel-cart';
 const LOCALES = { es: 'es-AR', en: 'en-GB', da: 'da-DK' };
@@ -146,8 +146,8 @@ function renderSheet() {
     li.className = 'cart-item';
     li.innerHTML = `
       <div class="cart-item__info">
-        <span class="cart-item__name">${product.name[lang]}</span>
-        <span class="cart-item__meta">${variant.units === 1 ? t('menu.units.one') : t('menu.units.many', { n: variant.units })} · ${variant.price} ${BUSINESS.currency}</span>
+        <span class="cart-item__name">${escapeHtml(product.name[lang])}</span>
+        <span class="cart-item__meta">${unitsLabel(variant.units, product.unit)} · ${variant.price} ${BUSINESS.currency}</span>
       </div>
       <span class="cart-item__qty">
         <button type="button" data-minus aria-label="${t('cart.less')}">−</button>
@@ -294,7 +294,7 @@ function buildMessage() {
   const lang = getLang();
   const lines = items.map((line) => {
     const { product, variant, total } = lineData(line);
-    const units = variant.units === 1 ? t('menu.units.one') : t('menu.units.many', { n: variant.units });
+    const units = unitsLabel(variant.units, product.unit);
     return `• ${line.qty} × ${product.name[lang]} (${units}): ${total} ${BUSINESS.currency}`;
   });
   const day = openDays().find((d) => dayKeyOf(d) === pickup.dayKey);

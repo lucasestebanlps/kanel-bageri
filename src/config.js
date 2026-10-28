@@ -43,3 +43,13 @@ export const HOURS = {
   minLeadMinutes: 60, // el primer horario ofrecido: ahora + 1 h para preparar
   daysAhead: 7,
 };
+
+/**
+ * Panel (Sanity): de acá salen los productos. Con projectId vacío la web usa
+ * src/data/products.json. Mismos datos que studio/cliente.js.
+ */
+export const PANEL = {
+  projectId: '2mfj2p92',
+  dataset: 'production',
+  apiVersion: '2025-01-01',
+};
