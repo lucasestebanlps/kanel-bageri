@@ -51,7 +51,7 @@ setInterval(updateNextPickup, 60000);
 /* Scroll reveal: el hero se ve de entrada; el resto aparece un poco antes de
    entrar en pantalla, así nunca se ve un hueco vacío al scrollear rápido. */
 const revealTargets = document.querySelectorAll(
-  '.section__head, .about__photo, .about__text, .mosaic, .contact__info, .contact__map'
+  '.section__head, .info-card, .about__photo, .about__text, .contact__map'
 );
 const io = new IntersectionObserver(
   (entries) => {

@@ -36,8 +36,8 @@ export const DICT = {
     'nav.contact': 'Contacto',
     'nav.cta': 'Hacé tu pedido',
 
-    'hero.badge': 'Panadería de barrio en Frederiksberg, desde 2018',
-    'hero.title': 'Horneado esta mañana. Listo a tu hora.',
+    'hero.badge': 'Panadería de barrio en Frederiksberg',
+    'hero.title': 'Kanelsnegle recién horneados, listos a la hora que elijas',
     'hero.sub':
       'Horneamos cada mañana con manteca danesa y masa madre. Armá tu pedido, elegí cuándo pasás a buscarlo y te lo tenemos listo, sin hacer fila.',
     'hero.ctaOrder': 'Ver el menú y pedir',
@@ -147,8 +147,8 @@ export const DICT = {
     'nav.contact': 'Contact',
     'nav.cta': 'Place your order',
 
-    'hero.badge': 'Neighbourhood bakery in Frederiksberg since 2018',
-    'hero.title': 'Baked this morning. Ready when you are.',
+    'hero.badge': 'Neighbourhood bakery in Frederiksberg',
+    'hero.title': 'Freshly baked cinnamon rolls, ready when you want them',
     'hero.sub':
       'We bake every morning with Danish butter and sourdough. Build your order, pick a time to collect it and we will have it ready. No queue.',
     'hero.ctaOrder': 'See the menu and order',
@@ -258,8 +258,8 @@ export const DICT = {
     'nav.contact': 'Kontakt',
     'nav.cta': 'Bestil nu',
 
-    'hero.badge': 'Kvarterets bageri på Frederiksberg siden 2018',
-    'hero.title': 'Bagt i morges. Klar når du er.',
+    'hero.badge': 'Kvarterets bageri på Frederiksberg',
+    'hero.title': 'Nybagte kanelsnegle, klar når det passer dig',
     'hero.sub':
       'Vi bager hver morgen med dansk smør og surdej. Sæt din bestilling sammen, vælg hvornår du henter, så har vi den klar. Ingen kø.',
     'hero.ctaOrder': 'Se menuen og bestil',
