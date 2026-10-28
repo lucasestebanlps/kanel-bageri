@@ -21,7 +21,7 @@ export const BUSINESS = {
   currency: 'kr',
 
   // Etiqueta "Web de ejemplo · Plan Profesional" y links a la web de Lucas.
-  plan: { price: 4000 },
+  plan: { price: 4500 },
   makerUrls: {
     es: 'https://lucasesteban.dk/',
     en: 'https://lucasesteban.dk/en/',

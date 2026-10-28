@@ -13,7 +13,7 @@ Lo que muestra, que es lo que promete el plan Profesional:
   mañana 7:00 a 11:30, tarde 14:00 a 17:00, y para hoy solo desde dentro de una hora).
 - **El pedido llega armado por WhatsApp**: productos, total, día y hora.
 
-Arriba lleva la franja "Web de ejemplo · Plan Profesional · 4.000 DKK · Ver planes" y al pie
+Arriba lleva la franja "Web de ejemplo · Plan Profesional · 4.500 DKK · Ver planes" y al pie
 "Web hecha por Lucas Esteban". Todos los WhatsApp van al número de Lucas con un mensaje de
 interés ("Vi tu web de ejemplo de Kanel…"). No muestra stock ni "Popular": eso es del Premium.
 
