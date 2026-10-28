@@ -37,7 +37,7 @@ export function initHeader() {
   onScroll();
 
   /* --- scrollspy --- */
-  const links = [...document.querySelectorAll('.nav-capsule a[data-spy]')];
+  const links = [...document.querySelectorAll('.site-nav a[data-spy]')];
   const byId = new Map(links.map((a) => [a.getAttribute('href').slice(1), a]));
 
   const spy = new IntersectionObserver(

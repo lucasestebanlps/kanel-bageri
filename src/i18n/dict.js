@@ -36,8 +36,8 @@ export const DICT = {
     'nav.contact': 'Contacto',
     'nav.cta': 'Hacé tu pedido',
 
-    'hero.badge': 'Panadería de barrio en Frederiksberg',
-    'hero.title': 'Kanelsnegle recién horneados, listos a la hora que elijas',
+    'hero.badge': 'Panadería de barrio en Frederiksberg, desde 2018',
+    'hero.title': 'Horneado esta mañana. Listo a tu hora.',
     'hero.sub':
       'Horneamos cada mañana con manteca danesa y masa madre. Armá tu pedido, elegí cuándo pasás a buscarlo y te lo tenemos listo, sin hacer fila.',
     'hero.ctaOrder': 'Ver el menú y pedir',
@@ -50,6 +50,7 @@ export const DICT = {
     'gallery.sub': 'Desde las 4 de la mañana, todos los días menos el lunes.',
 
     'menu.title': 'El menú',
+    'menu.eyebrow': 'Pedí online, retirá en el local',
     'menu.sub': 'Precios en coronas danesas. Armá tu pedido y elegí cuándo lo retirás.',
     'menu.tab.wiener': 'Masas danesas',
     'menu.tab.brod': 'Pan',
@@ -146,8 +147,8 @@ export const DICT = {
     'nav.contact': 'Contact',
     'nav.cta': 'Place your order',
 
-    'hero.badge': 'Neighbourhood bakery in Frederiksberg',
-    'hero.title': 'Freshly baked cinnamon rolls, ready when you want them',
+    'hero.badge': 'Neighbourhood bakery in Frederiksberg since 2018',
+    'hero.title': 'Baked this morning. Ready when you are.',
     'hero.sub':
       'We bake every morning with Danish butter and sourdough. Build your order, pick a time to collect it and we will have it ready. No queue.',
     'hero.ctaOrder': 'See the menu and order',
@@ -160,6 +161,7 @@ export const DICT = {
     'gallery.sub': 'From 4 in the morning, every day except Monday.',
 
     'menu.title': 'The menu',
+    'menu.eyebrow': 'Order online, collect in store',
     'menu.sub': 'Prices in Danish kroner. Build your order and choose when to collect it.',
     'menu.tab.wiener': 'Pastries',
     'menu.tab.brod': 'Bread',
@@ -256,8 +258,8 @@ export const DICT = {
     'nav.contact': 'Kontakt',
     'nav.cta': 'Bestil nu',
 
-    'hero.badge': 'Kvarterets bageri på Frederiksberg',
-    'hero.title': 'Nybagte kanelsnegle, klar når det passer dig',
+    'hero.badge': 'Kvarterets bageri på Frederiksberg siden 2018',
+    'hero.title': 'Bagt i morges. Klar når du er.',
     'hero.sub':
       'Vi bager hver morgen med dansk smør og surdej. Sæt din bestilling sammen, vælg hvornår du henter, så har vi den klar. Ingen kø.',
     'hero.ctaOrder': 'Se menuen og bestil',
@@ -270,6 +272,7 @@ export const DICT = {
     'gallery.sub': 'Fra klokken 4 om morgenen, alle dage undtagen mandag.',
 
     'menu.title': 'Menuen',
+    'menu.eyebrow': 'Bestil online, hent i butikken',
     'menu.sub': 'Priser i danske kroner. Sæt din bestilling sammen, og vælg hvornår du henter den.',
     'menu.tab.wiener': 'Wienerbrød',
     'menu.tab.brod': 'Brød',
